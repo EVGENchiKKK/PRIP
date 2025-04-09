@@ -2,9 +2,9 @@
     display: flex;
     margin: 0 auto;
     width: 900px;
-    height: 645px;
+    height: 545px;
     border-radius: 20px;
-    background: linear-gradient(-60deg, #16DAC4 0%, #15FF00 100%);;
+    background: linear-gradient(-60deg, #16DAC4 0%, #15FF00 100%);
 }
 
 .AboutCard h2 {
