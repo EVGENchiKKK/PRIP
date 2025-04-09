@@ -1,0 +1,26 @@
+.ZagViz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 600px;
+    background-image: url("/src/image/img/zagimg.png");
+    margin: 70px auto;
+    border-radius: 20px;
+}
+
+.ZagViz h1, h2 {
+    color: #000;
+    font-weight: 300;
+    font-size: 40px;
+    text-shadow: 0 10px 6px  rgba(0, 0, 0, 0.25);
+}
+
+.ZagImg {
+    position: absolute;
+    left: 39%;
+    top: 42em;
+    width: 359px;
+    height: 258px;
+}

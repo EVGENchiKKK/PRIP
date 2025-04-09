@@ -1,0 +1,48 @@
+.AboutCard {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    height: 645px;
+    border-radius: 20px;
+    background: linear-gradient(-60deg, #16DAC4 0%, #15FF00 100%);;
+}
+
+.AboutCard h2 {
+    font-size: 32px;
+}
+
+.AboutCard p {
+    font-size: 20px;
+}
+
+.Text {
+    padding-top: 59px;
+    padding-bottom: 80px;
+    width: 368px;
+    height: 406px;
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.Text h2 {
+    padding-left: 66px;
+}
+
+.Text hr {
+    width: 80%;
+    height: 10px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    background: linear-gradient(-60deg, #16DAC4 0%, #15FF00 100%);
+}
+
+.Text p {
+    padding-left: 39px;
+}
+
+.AboutCard img {
+    width: 50%; 
+    flex-basis: 50%;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
