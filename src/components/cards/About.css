@@ -1,6 +1,7 @@
 .AboutCard {
     display: flex;
     margin: 0 auto;
+    margin-top: 199px;
     width: 900px;
     height: 545px;
     border-radius: 20px;
