@@ -1,7 +1,7 @@
 .vizitPage {
     background: 
     linear-gradient(-60deg, #15FF00 0%, #FF00D9 100%);
-
+    font-family: 'Comfortaa' sans-serif;
     width: 100%;
     min-height: 100vh;
 }
