@@ -1,0 +1,74 @@
+footer {
+    max-width: 100%;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3F5040;
+    color: #fff;
+}
+.topSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navFoot {
+    display: flex;
+    max-width: 670px;
+    height: 35px;
+    color: #fff;
+}
+
+.navFoot ul {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 0%;
+}
+
+.socSeti {
+    display: flex;
+    justify-content: space-around;
+    width: 256px;
+    height: 62px;
+    align-items: center;
+}
+
+.socSeti hr {
+    height: 25px;
+    width: 3px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.socLogo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.logoFot {
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navTopWrapper {
+    width: 256px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.navTopIcon {
+    width: 70px;
+    height: 70px;
+}

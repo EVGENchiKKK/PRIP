@@ -4,11 +4,6 @@
     font-family: 'Comfortaa', sans-serif;
 }
 
-@font-face {
-    font-family: 'Comfortaa Regular';
-    src: url(./../../components/Font/Comfortaa.ttf);
-}
-
 .header {
     width: 100%;
     height: 130px;
