@@ -4,19 +4,17 @@ import { AboutCard } from "../../components/cards/About";
 import { AdvantagesSection } from "./FeaturesSection";
 import { CallToAction } from "./CallToAction";
 import { Footer } from "../../components/Footer";
-import './vizit.css'
+import './../../App.css';
 
 export const VizitPage = () => {
     return (
         <div className="vizitPage">
-            <div className="black">
-                <Header/>
-                <ZagViz />
-                <AboutCard />
-                <AdvantagesSection />
-                <CallToAction />
-                <Footer />
-            </div>
+            <Header/>
+            <ZagViz />
+            <AboutCard />
+            <AdvantagesSection />
+            <CallToAction />
+            <Footer />
        </div>
     )
 }
