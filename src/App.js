@@ -1,11 +1,18 @@
 import './App.css';
 import { VizitPage } from './pages/Vizitka/vizit';
+import { Home } from './pages/Home/home';
+import { Route, BrowserRouter, Routes, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <div className="black">
-        <VizitPage />
+    <div className='App'>
+      <div className='black'>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<VizitPage/>}/>
+            <Route path="/home" element={<Home/>}/>
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
