@@ -2,10 +2,12 @@
   text-align: center;
   font-family: 'Comfortaa' sans-serif;
   background: 
-    linear-gradient(120deg, #15FF00 0%, #FF00D9 100%);
+    linear-gradient(-150deg, #15FF00 0%, #FF00D9 100%);
+  padding: 0;
+  margin: 0;
 }
 .black {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -19,13 +21,17 @@
   src: url(./components/Font/Comfortaa.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homePage {
+  display: flex;
+  min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainPlayPage {
+  margin: 50px auto;
+  max-width: 760px;
+  height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

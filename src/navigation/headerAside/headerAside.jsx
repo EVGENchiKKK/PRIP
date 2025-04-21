@@ -2,28 +2,38 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from './../../image/img/Иконка муз.дорожки.png';
 import './headerAside.css';
+import homeOff from './../../image/icons/homeOff.png';
+import browseOff from './../../image/icons/browseOff.png';
+import premiumOff from './../../image/icons/premiunOff.png';
+import myMusicOff from './../../image/icons/MyMusicOff.png';
+import discoweryOff from './../../image/icons/DiscoveryOff.png';
+import createPlaylist from './../../image/icons/CreatePlaylist.png';
 
-export const SearchBarSection = () => {
+export const SideBarSection = () => {
   return (
     <aside className="bockPan">
         <nav className='navBock'>
             <a><img className='logo' src={Logo} alt=""/></a>
             <ul>
-                <li><Link to="/home"><img src="" alt="" />Главная</Link></li>
-                <li><Link to='/'>Просмотр</Link></li>
-                <li><Link to='/'>Премиум</Link></li>
-                <li><h2>Библеотека</h2></li>
-                <li><Link to='/'>Моя музыка</Link></li>
-                <li><Link to='/'>Открой для себя</Link></li>
+                <li><Link className="navLi" to="/home"><img src={homeOff} alt="" /><p>Главная</p></Link></li>
+                <li><Link className="navLi" to='/'><img src={browseOff} alt="" /><p>Просмотр</p></Link></li>
+                <li><Link className="navLi" to='/'><img src={premiumOff} alt="" /><p>Премиум</p></Link></li>
+                <h2 className="zagBib">Библеотека</h2>
+                <li><Link className="navLi" to='/'><img src={myMusicOff} alt="" />Моя музыка</Link></li>
+                <li><Link className="navLi" to='/'><img src={discoweryOff} alt="" />Открой для себя</Link></li>
             </ul>
             <div className="CreatePlaylist">
-                <h2 className="ZagCreatePlaylist">
+                <h2 className="zagBib play">
                     Плейлисты
                 </h2>
                 <p className="textCreatePlaylist">
                     У вас ещё нет <br />
                     своего плейлиста?
                 </p>
+                <button className="btnCreatePlaylist">
+                    <img src={createPlaylist} alt="" />
+                    <p>Создать плейлист</p>
+                </button>
             </div>
         </nav>
     </aside>
