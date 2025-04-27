@@ -12,6 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<VizitPage/>}/>
             <Route path="/home" element={<Home/>}/>
+            <Route path='/brows' element={<BrowsPage/>}/>
           </Routes>
         </BrowserRouter>
       </div>
