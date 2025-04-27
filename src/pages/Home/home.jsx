@@ -1,8 +1,9 @@
 import { SideBarSection } from "../../navigation/headerAside/headerAside";
 import { SearchBar } from "../../components/searchBar/SearchBar";
-import { CallToAction } from "../../components/cards/CallToAction";
+import { ReklPremTwo } from "../../components/cards/NastroyCard/ReklPremTwo";
 import { FourYouCard } from "../../components/cards/FourYouCard/FourYouCard";
 import { NewRelizCard } from "../../components/cards/NewRelizCard/NewRelizCard";
+import { NastroyCard } from "../../components/cards/NastroyCard/NastroyCard";
 import './../../App.css';
 
 export const Home = () => {
@@ -14,7 +15,8 @@ export const Home = () => {
                 <h1>Главная</h1>
                 <NewRelizCard />
                 <FourYouCard/>
-                <CallToAction/>
+                <NastroyCard/>
+                <ReklPremTwo/>
             </main>
         </div>
     )

@@ -48,6 +48,7 @@ h1 {
 
 .mainPlayPage {
   margin: 50px auto;
+  margin-right: 220px;
   width: 760px;
   height: auto;
   display: flex;

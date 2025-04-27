@@ -10,7 +10,7 @@ export const Header = ()=>{
                 <a><img className='logo' src={Logo} alt=""/></a>
                 <ul>
                     <li><Link to="/home">Главная</Link></li>
-                    <li><Link to='/'>Просмотр</Link></li>
+                    <li><Link to='/brows'>Просмотр</Link></li>
                     <li><Link to='/'>Моя музыка</Link></li>
                     <li><Link to='/'>Открой для себя</Link></li>
                     <li><Link to='/'>Премиум</Link></li>
