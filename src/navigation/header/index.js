@@ -1,9 +1,9 @@
-import { SearchBarSection } from '../headerAside/headerAside';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 import Logo from './../../image/img/Иконка муз.дорожки.png';
 import './header.css'
 
 export const Header = ()=>{
+    const navigate = useNavigate();
     return (
         <header className='header'>
             <nav className='nav'>
@@ -16,7 +16,7 @@ export const Header = ()=>{
                     <li><Link to='/'>Премиум</Link></li>
                     <li><Link to='/'>Связаться с нами</Link></li>
                 </ul>
-                <button className='vhod'>Вход</button>
+                <button className='vhod' onClick={() => navigate('/login')}>Вход</button>
             </nav>
         </header>
     )

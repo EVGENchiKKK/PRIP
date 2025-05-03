@@ -7,8 +7,8 @@ import './searchBar.css';
 
 export const SearchBar = () => {
     return (
-        <section className="search-section">
-            <div className="search-container">
+        <section className="search-section brows">
+            <div className="search-container brows">
                 <div className='search'>
                     <div className="search-icon">
                         <img src={searchLup} alt="Search"/>

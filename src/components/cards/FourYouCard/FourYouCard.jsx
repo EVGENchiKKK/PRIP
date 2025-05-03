@@ -5,6 +5,7 @@ import Playlist4 from './../../../image/img/Playlist4.jpg';
 import StrelLevo from './../../../image/icons/iconStrelLevo.png';
 import StrelPravo from './../../../image/icons/iconStrelPravo.png';
 import Logo from './../../../image/img/Иконка муз.дорожки.png';
+import { PlaylistCollection } from '../PlaylistsContainer/PlaylistsContainer';
 import './FourYouCard.css';
 
 export const FourYouCard = () => {
@@ -20,7 +21,7 @@ export const FourYouCard = () => {
                     </div>
                 </div>
                 <div className="bodyFourYouCard">
-                    <div className="playlistCard">
+                    {/* <div className="playlistCard">
                         <div className='playlistImg'>
                             <div className="recktangleIcon small"></div>
                             <div className="recktangleIcon"></div>
@@ -67,7 +68,8 @@ export const FourYouCard = () => {
                             <span>50</span>
                         </div>
                         <p>Ваш ежедневный микстейп свежей музыки.</p>
-                    </div>
+                    </div> */}
+                    <PlaylistCollection collectionName="dailyMix" />
                 </div>
             </section>
         </div>
