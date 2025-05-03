@@ -1,0 +1,64 @@
+{
+  "dailyMix": [
+    {
+      "id": 1,
+      "imageUrl": "/images/playlists/Playlist1.png",
+      "title": "Еженедельный микс",
+      "description": "Ваш еженедельный микстейп свежей музыки.",
+      "trackCount": 50
+    },
+    {
+      "id": 2,
+      "imageUrl": "/images/playlists/Playlist2.png",
+      "title": "Ежедневный микс",
+      "description": "Ваш ежедневный микстейп свежей музыки.",
+      "trackCount": 50
+    },
+    {
+      "id": 3,
+      "imageUrl": "/images/playlists/Playlist3.jpg",
+      "title": "Ежедневный микс",
+      "description": "Ваш ежедневный микстейп свежей музыки.",
+      "trackCount": 50
+    },
+    {
+      "id": 4,
+      "imageUrl": "/images/playlists/Playlist4.jpg",
+      "title": "Ежедневный микс",
+      "description": "Ваш ежедневный микстейп свежей музыки.",
+      "trackCount": 50
+    }
+  ],
+
+  "mood": [
+    {
+      "id": 1,
+      "imageUrl": "/images/playlists/Playlist1N.jpg",
+      "title": "Весёлый микс",
+      "description": "Микс, с которым вы точно взбодритесь.",
+      "trackCount": 50
+    },
+    {
+      "id": 2,
+      "imageUrl": "/images/playlists/Playlist2N.jpg",
+      "title": "Микс под работу",
+      "description": "Идеально для работы и плодотворного труда.",
+      "trackCount": 50
+    },
+    {
+      "id": 3,
+      "imageUrl": "/images/playlists/Playlist3N.jpg",
+      "title": "Тренировка",
+      "description": "Покаряй новые вершины с нами и твоим миксом!",
+      "trackCount": 50
+    },
+    {
+      "id": 4,
+      "imageUrl": "/images/playlists/Playlist4N.jpg",
+      "title": "Немножко погрустить",
+      "description": "Под грустный вайб.",
+      "trackCount": 25
+    }
+  ]
+    
+}

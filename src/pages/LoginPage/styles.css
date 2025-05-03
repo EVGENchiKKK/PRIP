@@ -1,0 +1,119 @@
+/* src/styles.css */
+.gradient-background {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(135deg, #f06, #4a90e2); /* Пример градиента */
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-opacity-20 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop-blur-lg {
+    backdrop-filter: blur(10px);
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-6xl {
+    max-width: 72rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.md\:flex-row {
+    flex-direction: row;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.relative {
+    position: relative;
+}
+
+.w-1\/2 {
+    width: 50%;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.logo-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.text-white {
+    color: white;
+}
+
+.text-opacity-80 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-w-xs {
+    max-width: 20rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
