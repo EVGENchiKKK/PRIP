@@ -1,0 +1,31 @@
+{
+    "tracks": [
+    {
+      "id": 1,
+      "title": "Not Obama",
+      "artist": "Bid Baby Tape, Aarne",
+      "album": "PEECABOO",
+      "plays": 2456789,
+      "duration": "2:24",
+      "cover": "/covers/weeknd.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Save Your Tears",
+      "artist": "The Weeknd",
+      "album": "After Hours",
+      "plays": 1876543,
+      "duration": "3:35",
+      "cover": "/covers/weeknd.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Stay",
+      "artist": "The Kid LAROI, Justin Bieber",
+      "album": "F*CK LOVE 3+",
+      "plays": 3210987,
+      "duration": "2:21",
+      "cover": "/covers/laroi.jpg"
+    }
+  ]
+}

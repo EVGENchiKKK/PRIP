@@ -1,0 +1,26 @@
+.ganreCard {
+    position: relative;
+    width: 160px;
+    height: 177px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ganreCard img {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.ganreContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

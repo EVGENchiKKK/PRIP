@@ -1,0 +1,46 @@
+{
+    "ganre": [
+        {
+            "id": 1,
+            "title": "Хип-хоп и реп",
+            "bgImage": "/images/ganre/hip-hop.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Рок",
+            "bgImage": "/images/ganre/Rock.jpg"
+        },
+        {
+            "id": 3,
+            "title": "EDM",
+            "bgImage": "/images/ganre/EDM.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Поп",
+            "bgImage": "/images/ganre/Pop.jpg"
+        }
+    ],
+    "moodNeo": [
+        {
+            "id": 1,
+            "title": "Радость",
+            "bgImage": "/images/ganre/Fany.png"
+        },
+        {
+            "id": 2,
+            "title": "Грусть",
+            "bgImage": "/images/ganre/Grust.png"
+        },
+        {
+            "id": 3,
+            "title": "Спорт", 
+            "bgImage": "/images/ganre/Sport.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Веселье",
+            "bgImage":"/images/ganre/Tusa.png"
+        }
+    ]
+}
