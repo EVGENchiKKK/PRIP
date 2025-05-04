@@ -96,3 +96,12 @@
     width: 15px;
     height: 15px;
 }
+
+.search-container.brows {
+    display: none;
+}
+
+.search-section.brows {
+    width: 100%;
+    justify-content: flex-end;
+}
