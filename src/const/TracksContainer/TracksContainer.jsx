@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { TracksCard } from "./TracksCard";
 import './TracksContainer.css'
 
 export const TracksContainer = ({ tracksCollection }) => {
@@ -8,7 +9,7 @@ export const TracksContainer = ({ tracksCollection }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/GanrePod.json');
+                const response = await fetch('/tracks.json');
                 const data = await response.json();
                 setTracks(data[tracksCollection] || []);
             } catch (error) {
@@ -26,7 +27,10 @@ export const TracksContainer = ({ tracksCollection }) => {
 
     return (
         <div className="tracksContainer">
-
+            {tracks.map(track => (
+                <TracksCard key={track.id} track={track} />
+            ))}
+            
         </div>
     )
 }
