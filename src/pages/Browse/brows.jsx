@@ -7,6 +7,8 @@ import searchStrel from './../../image/icons/icons8-right-arrow-16.png';
 import { GanreCard } from '../../components/cards/GanrePlaylistCard/GanrePlaylistCard';
 import { MoodNeoCard } from '../../components/cards/GanrePlaylistCard/MoodNeoPlalists';
 import { ChartsCard } from '../../components/cards/ChartsCard/ChartsCard';
+import { ChartsAlbumCards } from '../../components/cards/ChartsAlbum/ChartsAlbum';
+import { FooterNoVizit } from '../../components/FooterNoVizit';
 
 export const BrowsPage = () => {
     return (
@@ -29,10 +31,8 @@ export const BrowsPage = () => {
                 <GanreCard/>
                 <MoodNeoCard />
                 <ChartsCard/>
-                {/* <NewRelizCard />
-                <FourYouCard/>
-                <NastroyCard/>
-                <ReklPremTwo/> */}
+                <ChartsAlbumCards/>
+                <FooterNoVizit/>
             </main>
         </div>
     )

@@ -4,6 +4,7 @@ import { ReklPremTwo } from "../../components/cards/NastroyCard/ReklPremTwo";
 import { FourYouCard } from "../../components/cards/FourYouCard/FourYouCard";
 import { NewRelizCard } from "../../components/cards/NewRelizCard/NewRelizCard";
 import { NastroyCard } from "../../components/cards/NastroyCard/NastroyCard";
+import { FooterNoVizit } from "../../components/FooterNoVizit";
 import './../../App.css';
 
 export const Home = () => {
@@ -17,6 +18,7 @@ export const Home = () => {
                 <FourYouCard/>
                 <NastroyCard/>
                 <ReklPremTwo/>
+                <FooterNoVizit />
             </main>
         </div>
     )

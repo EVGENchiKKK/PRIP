@@ -13,3 +13,27 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+
+.btnFullChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.btnFullChart img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 20px;
+}
+
+.btnCharts {
+    width: 145px;
+    height: 38px;
+    background-color: #15FF00;
+    border-radius: 20px;
+    color: #fff;
+}

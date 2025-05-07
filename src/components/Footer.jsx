@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className='footer'>
         <div className="topSection">
           <nav className='navFoot'>
               <ul>

@@ -11,21 +11,39 @@
       },
       {
         "id": 2,
-        "title": "Save Your Tears",
-        "artist": "The Weeknd",
-        "album": "After Hours",
+        "title": "Добро Пожаловать На Луну",
+        "artist": "PHARAON",
+        "album": "10:13",
         "plays": 1876543,
-        "duration": "3:35",
-        "cover": "/covers/weeknd.jpg"
+        "duration": "2:25",
+        "cover": "/images/covers/1QjX8lbNSCU.jpg"
       },
       {
         "id": 3,
-        "title": "Stay",
-        "artist": "The Kid LAROI, Justin Bieber",
-        "album": "F*CK LOVE 3+",
+        "title": "Most Valuable Pirate",
+        "artist": "FRIENDLY THUG 52 NGG",
+        "album": "Graf Monte-Cristo / Most Valuable Pirate",
         "plays": 3210987,
-        "duration": "2:21",
-        "cover": "/covers/laroi.jpg"
+        "duration": "1:49",
+        "cover": "/images/covers/A_0rXOSM9SU.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Pimpin'",
+        "artist": "Yanix",
+        "album": "Vibes",
+        "plays": 3110987,
+        "duration": "2:33",
+        "cover": "/images/covers/bzBci7ex3pU.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Бандит",
+        "artist": "OG Buda",
+        "album": "ОПГ СИТИ",
+        "plays": 4110987,
+        "duration": "3:13",
+        "cover": "/images/covers/OPGCITY.jpg"
       }
   ]
 }
