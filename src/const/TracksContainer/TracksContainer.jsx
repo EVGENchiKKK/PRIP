@@ -27,8 +27,8 @@ export const TracksContainer = ({ tracksCollection }) => {
 
     return (
         <div className="tracksContainer">
-            {tracks.map(track => (
-                <TracksCard key={track.id} track={track} />
+            {tracks.map((track, index) => (
+                <TracksCard key={track.id} track={track} number={index + 1} />
             ))}
             
         </div>

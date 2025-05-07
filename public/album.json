@@ -1,0 +1,28 @@
+{
+    "albums": [
+        {
+            "id": 1,
+            "title": "PEECABOO",
+            "artist": "Big Baby Tape, Aarne",
+            "albumImg": "/images/covers/Notobama.jpg"
+        },
+        {
+            "id": 2,
+            "title": "california rocket fuel: pt. 2",
+            "artist": "кровь из носа",
+            "albumImg": "/images/covers/sCkduzzgAIc.jpg"
+        },
+        {
+            "id": 3,
+            "title": "BORN TO TRAP",
+            "artist": "kizaru",
+            "albumImg": "/images/covers/fpchfMA-zh0.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Vibes",
+            "artist": "Yanix",
+            "albumImg": "/images/covers/bzBci7ex3pU.jpg"
+        }
+    ]
+}

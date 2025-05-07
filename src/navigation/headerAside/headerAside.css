@@ -59,6 +59,10 @@
     justify-content: flex-start;
 }
 
+.navLi:hover {
+    color: #15FF00;
+}
+
 .navLi img {
     width: 30px;
     height: 30px;
@@ -90,4 +94,19 @@
 .btnCreatePlaylist img {
     width: 30px;
     height: 30px;
+}
+
+.logoLi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./../../image/icons/homeOff.png');
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.logoLi:hover {
+    background-image: url(./../../image/icons/homeOn.png);
 }
