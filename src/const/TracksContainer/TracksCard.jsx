@@ -1,7 +1,7 @@
 import React from "react";
 import './TracksContainer.css';
 
-export const TracksCard = (track) => {
+export const TracksCard = ({track}) => {
     return (
         <div className="tracksCard">
             <div className="trackLogo">
