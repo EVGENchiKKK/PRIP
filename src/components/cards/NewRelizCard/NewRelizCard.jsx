@@ -23,7 +23,13 @@ export const NewRelizCard = () => {
 
     return (
         <div className='main'>
-            <h2>Новые релизы</h2>
+            <div className='headerSliderCard'>
+                <h2>Новые релизы</h2>
+                <div className='sliderPereBtn'>
+                    <button className="slider-nav prev" onClick={prevSlide}>&#10094;</button>
+                    <button className="slider-nav next" onClick={nextSlide}>&#10095;</button>
+                </div>
+            </div>
             <div className="slider-container">
                 <div
                     className="slider"
@@ -41,11 +47,8 @@ export const NewRelizCard = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-                <button className="slider-nav prev" onClick={prevSlide}>&#10094;</button>
-                <button className="slider-nav next" onClick={nextSlide}>&#10095;</button>
+                </div> 
             </div>
         </div>
-
     );
 };

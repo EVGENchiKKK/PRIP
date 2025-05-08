@@ -23,6 +23,12 @@
             "title": "Vibes",
             "artist": "Yanix",
             "albumImg": "/images/covers/bzBci7ex3pU.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Dragonborn",
+            "artist":"Big Baby Tape",
+            "albumImg":"/images/covers/1h4rlR68twM.jpg"
         }
     ]
 }
