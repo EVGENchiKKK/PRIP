@@ -1,13 +1,22 @@
 .ZagViz {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 70px;
     width: 900px;
     height: 600px;
     background-image: url("/src/image/img/zagimg.png");
     margin: 70px auto;
+    margin-bottom: 190px;
     border-radius: 20px;
+}
+
+.ZagViz.prem h2 {
+    margin-bottom: -120px;
+    font-size: 50px;
+    font-weight: 300;
 }
 
 .ZagViz h1, h2 {
@@ -19,8 +28,14 @@
 
 .ZagImg {
     position: absolute;
-    left: 39%;
-    top: 42em;
+    top: 79%;
     width: 359px;
     height: 258px;
+}
+
+.premText {
+    width: 900px;
+    color: #fff;
+    font-size: 32px;
+    margin: 78px auto;
 }
