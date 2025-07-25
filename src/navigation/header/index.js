@@ -2,7 +2,7 @@ import { Link, useNavigate  } from 'react-router-dom';
 import Logo from './../../image/img/Иконка муз.дорожки.png';
 import './header.css'
 
-export const Header = ()=>{
+export const Header = () => {
     const navigate = useNavigate();
     return (
         <header className='header'>
@@ -11,7 +11,7 @@ export const Header = ()=>{
                 <ul>
                     <li><Link to="/home">Главная</Link></li>
                     <li><Link to='/brows'>Просмотр</Link></li>
-                    <li><Link to='/'>Моя музыка</Link></li>
+                    <li><Link to='/mymusic'>Моя музыка</Link></li>
                     <li><Link to='/'>Открой для себя</Link></li>
                     <li><Link to='/'>Премиум</Link></li>
                     <li><Link to='/'>Связаться с нами</Link></li>
