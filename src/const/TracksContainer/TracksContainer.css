@@ -1,5 +1,5 @@
 .tracksContainer {
-    width: 100%;
+    max-width: 720px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -23,6 +23,10 @@
         background: rgba(0, 0, 0, 0.4);
         transform: translateY(-5px);
     }
+}
+
+.tracksCard.myMusic {
+    background-color: white;
 }
 
 .trackLogo {

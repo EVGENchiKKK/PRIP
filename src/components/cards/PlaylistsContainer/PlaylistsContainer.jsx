@@ -29,24 +29,24 @@ export const PlaylistCollection = ({ collectionName }) => {
       <div className="playlists-container">
         {playlists.map(playlist => (
           <div className="playlist-card">
-          <div className="playlist-image">
-            <img 
-              src={playlist.imageUrl} 
-              alt={playlist.title}
-              onError={(e) => {
-                e.target.src = 'https://example.com/default-playlist-image.jpg'; // Запасное изображение
-              }}
-            />
-          </div>
-          <div className="playlist-info">
-            <div className="track-title">
-              <h3>{playlist.title} </h3>
-              <span>{playlist.trackCount}</span>
+            <div className="playlist-image">
+              <img 
+                src={playlist.imageUrl} 
+                alt={playlist.title}
+                onError={(e) => {
+                  e.target.src = 'https://example.com/default-playlist-image.jpg'; // Запасное изображение
+                }}
+              />
             </div>
-            <p className="subtitle">{playlist.subtitle}</p>
-            <p className="description">{playlist.description}</p>
+            <div className="playlist-info">
+              <div className="track-title">
+                <h3>{playlist.title} </h3>
+                <span>{playlist.trackCount}</span>
+              </div>
+              <p className="subtitle">{playlist.subtitle}</p>
+              <p className="description">{playlist.description}</p>
+            </div>
           </div>
-        </div>
         ))}
       </div>
     </div>

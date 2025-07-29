@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { TracksCard } from "./TracksCard";
 import './TracksContainer.css'
+import { color } from "framer-motion";
 
-export const TracksContainer = ({ tracksCollection }) => {
+export const TracksContainer = ({ tracksCollection, opacity }) => {
     const [tracks, setTracks] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -27,8 +27,19 @@ export const TracksContainer = ({ tracksCollection }) => {
 
     return (
         <div className="tracksContainer">
-            {tracks.map((track, index) => (
-                <TracksCard key={track.id} track={track} number={index + 1} />
+            {tracks.map((track, number) => (
+                <div className="tracksCard" style={{backgroundColorт: {opacity}}}>
+                    <div className="trackLogo">
+                        <span className="trackNumber">{number+1}</span>
+                        <img src={track.cover} alt="" />
+                    </div>
+                    <div className="trackNameAvt">
+                        <h3>{track.title}</h3>
+                        <span>{track.artist}</span>
+                    </div>
+                    <span className="nameAlbum">{track.album}</span>
+                    <span className="prodTrack">{track.duration}</span>
+                </div>
             ))}
             
         </div>
