@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import './TracksContainer.css'
-import { color } from "framer-motion";
 
 export const TracksContainer = ({ tracksCollection, opacity }) => {
     const [tracks, setTracks] = useState([]);
@@ -25,10 +24,14 @@ export const TracksContainer = ({ tracksCollection, opacity }) => {
     if (loading) return <div>Загрузка...</div>;
     if (!tracks.length) return <div>Подборка не найдена.</div>;
 
+    const getTrackStyle = () => {
+        return opacity === "none" ? { backgroundColor: 'transparent' } : {};
+    }
+
     return (
         <div className="tracksContainer">
             {tracks.map((track, number) => (
-                <div className="tracksCard" style={{backgroundColorт: {opacity}}}>
+                <div className="tracksCard" style={getTrackStyle()}>
                     <div className="trackLogo">
                         <span className="trackNumber">{number+1}</span>
                         <img src={track.cover} alt="" />
@@ -41,7 +44,6 @@ export const TracksContainer = ({ tracksCollection, opacity }) => {
                     <span className="prodTrack">{track.duration}</span>
                 </div>
             ))}
-            
         </div>
     )
 }

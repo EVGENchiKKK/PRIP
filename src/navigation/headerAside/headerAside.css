@@ -12,12 +12,11 @@
     max-width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
     align-items: flex-start;
     /* justify-content: space-between; */
     gap: 38px;
-    padding: 0px 0 30px 75px;
+    /* padding: 0px 0 30px 75px; */
     color: #fff;
 }
 

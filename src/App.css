@@ -26,6 +26,17 @@
   min-height: 100vh;
 }
 
+.wrapperAside{
+  flex: 1;
+}
+
+.wrapperMain {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .main {
   width: 100%;
   margin-top: 20px;
@@ -48,8 +59,8 @@ h1 {
 
 .mainPlayPage {
   margin: 50px auto;
-  margin-right: 220px;
-  width: 760px;
+  /* margin-right: 220px; */
+  width: 850px;
   height: auto;
   display: flex;
   flex-direction: column;

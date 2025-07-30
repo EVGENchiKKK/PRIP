@@ -13,27 +13,31 @@ import { FooterNoVizit } from '../../components/FooterNoVizit';
 export const BrowsPage = () => {
     return (
         <div className="homePage">
-            <SideBarSection />
-            <main className="mainPlayPage">
-                <SearchBarBrows/>
-                <h1>Просмотр</h1>
-                <div className="search-container-brows">
-                    <div className='search'>
-                        <div className="search-icon">
-                            <img src={searchLup} alt="Search"/>
-                        </div>
-                        <input type="text" placeholder="Направление, специальность и тд." className="search-input"/>
-                        <div className="arrow-icon">
-                            <img src={searchStrel} alt="Arrow"/>
+            <div className="wrapperAside">
+               <SideBarSection /> 
+            </div>
+            <div className="wrapperMain">
+                <main className="mainPlayPage">
+                    <SearchBarBrows/>
+                    <h1>Просмотр</h1>
+                    <div className="search-container-brows">
+                        <div className='search'>
+                            <div className="search-icon">
+                                <img src={searchLup} alt="Search"/>
+                            </div>
+                            <input type="text" placeholder="Направление, специальность и тд." className="search-input"/>
+                            <div className="arrow-icon">
+                                <img src={searchStrel} alt="Arrow"/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <GanreCard/>
-                <MoodNeoCard />
-                <ChartsCard/>
-                <ChartsAlbumCards/>
-                <FooterNoVizit/>
-            </main>
+                    <GanreCard/>
+                    <MoodNeoCard />
+                    <ChartsCard/>
+                    <ChartsAlbumCards/>
+                    <FooterNoVizit/>
+                </main>
+            </div>
         </div>
     )
 }

@@ -10,16 +10,21 @@ import './../../App.css';
 export const Home = () => {
     return (
         <div className="homePage">
-            <SideBarSection />
-            <main className="mainPlayPage">
-                <SearchBar/>
-                <h1>Главная</h1>
-                <NewRelizCard />
-                <FourYouCard/>
-                <NastroyCard/>
-                <ReklPremTwo/>
-                <FooterNoVizit />
-            </main>
+            <div className="wrapperAside">
+               <SideBarSection /> 
+            </div>
+            <div className="wrapperMain">
+                <main className="mainPlayPage">
+                    <SearchBar/>
+                    <h1>Главная</h1>
+                    <NewRelizCard />
+                    <FourYouCard/>
+                    <NastroyCard/>
+                    <ReklPremTwo/>
+                    <FooterNoVizit />
+                </main>
+            </div>
+            
         </div>
     )
 }

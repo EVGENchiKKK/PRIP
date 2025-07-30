@@ -1,7 +1,6 @@
 .MyMusicPage {
     margin: 50px auto;
-    margin-right: 220px;
-    width: 760px;
+    width: 850px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -72,6 +71,54 @@
 }
 
 .bottomSectionMyMusic {
+    width: 670px;
+    margin: 0 auto;
+}
+
+.sectionMymusic {
     width: 100%;
-    padding: 0 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.sectionMymusic > h3 {
+    /* margin-left: 25px; */
+    margin-bottom: 15px;
+}
+
+.btnCreatePlay {
+    width: 160px;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+    transform: translateX(20px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.imgCreate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    background-color: #121412;
+    border-radius: 10px;
+}
+
+.btnCreatePlay img {
+    width: 30px;
+    height: 30px;
+}
+
+.btnCreatePlay p {
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
 }
