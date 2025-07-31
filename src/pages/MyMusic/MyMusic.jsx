@@ -22,9 +22,9 @@ export const MyMusic = () => {
                     <SearchBar/>
                     <div className="mainMyMusic">
                         <div className="topSectionMyMusic">
-                            <div className="userIcon">
+                            {/* <div className="userIcon">
                                 <img src={userLogo} alt="aoishjdf" />
-                            </div>
+                            </div> */}
                             <div className="contentTop">
                                 <h1>Моя музыка</h1>
                                 <hr />

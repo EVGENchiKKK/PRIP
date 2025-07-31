@@ -1,5 +1,5 @@
 .tracksContainer {
-    max-width: 720px;
+    max-width: 760px;
     display: flex;
     flex-direction: column;
     gap: 10px;
