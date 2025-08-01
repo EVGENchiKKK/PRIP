@@ -17,12 +17,12 @@
     font-size: 12px;
     text-align: left;
     transition: transform 0.3s ease;
+}
 
-    &:hover {
-        /* background: linear-gradient(-150deg, #15FF00 0%, #FF00D9 100%); */
-        background: rgba(0, 0, 0, 0.4);
-        transform: translateY(-5px);
-    }
+.tracksCard:hover {
+    /* background: linear-gradient(-150deg, #15FF00 0%, #FF00D9 100%); */
+    background: rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
 }
 
 .tracksCard.myMusic {

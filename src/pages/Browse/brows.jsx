@@ -34,7 +34,7 @@ export const BrowsPage = () => {
                     <GanreCard/>
                     <MoodNeoCard />
                     <ChartsCard/>
-                    <ChartsAlbumCards/>
+                    <ChartsAlbumCards nameGlav="Charts"/>
                     <FooterNoVizit/>
                 </main>
             </div>

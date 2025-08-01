@@ -1,0 +1,24 @@
+{
+    "artists": [
+        {
+            "id": 1,
+            "nikName": "Big Baby Tape",
+            "icon": "./../src/image/img/BigBabyTape.jpg"  
+        },
+        {
+            "id": 2,
+            "nikName": "ROCKET",
+            "icon": "./../src/image/img/ROCKET.jpg"
+        },
+        {
+            "id": 3,
+            "nikName": "Bumble Beezy",
+            "icon": "./../src/image/img/BumbleBeezy.jpg"
+        },
+        {
+            "id": 4,
+            "nikName": "LILDRUGHILL",
+            "icon": "./../src/image/img/LILDRUGHILL.jpg"
+        }
+    ]    
+}

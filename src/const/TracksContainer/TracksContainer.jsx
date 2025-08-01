@@ -25,13 +25,13 @@ export const TracksContainer = ({ tracksCollection, opacity }) => {
     if (!tracks.length) return <div>Подборка не найдена.</div>;
 
     const getTrackStyle = () => {
-        return opacity === "none" ? { backgroundColor: 'transparent' } : {};
+        return opacity === "none" ? { backgroundColor: 'rgba(0, 0, 0, 0)'} : {};
     }
 
     return (
         <div className="tracksContainer">
             {tracks.map((track, number) => (
-                <div className="tracksCard" style={getTrackStyle()}>
+                <div className="tracksCard" style={getTrackStyle()} key={number}>
                     <div className="trackLogo">
                         <span className="trackNumber">{number+1}</span>
                         <img src={track.cover} alt="" />

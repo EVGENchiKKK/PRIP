@@ -3,7 +3,7 @@ import { VizitPage } from './pages/Vizitka/vizit';
 import { Home } from './pages/Home/home';
 import { BrowsPage } from './pages/Browse/brows';
 import { PremiumPage } from './pages/Premium/PremiumPage';
-import { Route, BrowserRouter, Routes, Link } from 'react-router-dom';
+import { Route, BrowserRouter, Routes} from 'react-router-dom';
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { MyMusic } from './pages/MyMusic/MyMusic';
 
@@ -17,7 +17,7 @@ function App() {
             <Route path='/home' element={<Home/>}/>
             <Route path='/brows' element={<BrowsPage/>}/>
             <Route path ='/mymusic' element={<MyMusic/>}/>
-            <Route path='/premium' element={<PremiumPage/>}></Route>
+            <Route path='/premium' element={<PremiumPage/>}/>
             <Route path='/login' element={<LoginPage/>}/>
           </Routes>
         </BrowserRouter>

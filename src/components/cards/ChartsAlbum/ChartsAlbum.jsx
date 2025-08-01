@@ -3,7 +3,7 @@ import StrelPravo from './../../../image/icons/iconStrelPravo.png';
 import './ChartsAlbum.css';
 import { useState, useEffect, useRef } from 'react';
 
-export const ChartsAlbumCards = () => {
+export const ChartsAlbumCards = ({nameGlav}) => {
     const [albums, setAlbums] = useState([]);
     const [loading, setLoading] = useState(true);
     const containerRef = useRef(null);
@@ -45,13 +45,26 @@ export const ChartsAlbumCards = () => {
         }
     };
 
+    const getNameGlav = () => {
+        let secName = ""
+        if (nameGlav === "MyAlbums") {
+            secName = "Мои альбомы"
+        } else if (nameGlav === "Charts") {
+            secName = "Чарт альбомов"
+        } else {
+            secName += nameGlav
+        }
+
+        return secName
+    }
+
     if (loading) return <div className="loading">Загрузка...</div>;
     if (!albums.length) return <div className="not-found">Подборка не найдена.</div>;
 
     return (
         <section className="chartsAlbumCards">
             <div className="headerChartsAlbum">
-                <h2>Чарт альбомов</h2>
+                <h2>{getNameGlav()}</h2>
                 <div className="sliderBtn">
                     <button className="slideBtn" onClick={() => scrollTo('prev')}>
                         <img src={StrelLevo} alt="Предыдущий" />

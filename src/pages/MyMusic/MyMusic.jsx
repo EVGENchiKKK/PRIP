@@ -8,7 +8,7 @@ import './../../App.css';
 import './MyMusic.css';
 import './../../components/cards/ChartsAlbum/ChartsAlbum.css'
 import './../../const/TracksContainer/TracksContainer.css'
-import userLogo from './../../image/img/omi-omi.jpg';
+import { FavoriteArtist } from "./FavoriteArtists";
 
 
 export const MyMusic = () => {
@@ -22,9 +22,6 @@ export const MyMusic = () => {
                     <SearchBar/>
                     <div className="mainMyMusic">
                         <div className="topSectionMyMusic">
-                            {/* <div className="userIcon">
-                                <img src={userLogo} alt="aoishjdf" />
-                            </div> */}
                             <div className="contentTop">
                                 <h1>Моя музыка</h1>
                                 <hr />
@@ -33,20 +30,21 @@ export const MyMusic = () => {
                         </div>
                         <div className="bottomSectionMyMusic">
                             <section className="sectionMymusic">
-                                <h3>Треки</h3>
+                                <h2>Треки</h2>
                                 <TracksContainer opacity="none" tracksCollection="tracks"/>
                             </section>
-                            <section className="sectionMymusic">
-                                <h3>Мои плейлисты</h3>
-                                <CreatePlayBtn/>
+                            <section className="sectionMymusic create">
+                                <h2>Мои плейлисты</h2>
+                                <div className="wrapperCreate">
+                                    <CreatePlayBtn/>
+                                </div>
                             </section>
                             <section className="sectionMymusic">
-                                <h3>Мои альбомы</h3>
-                                <ChartsAlbumCards/>
+                                <ChartsAlbumCards nameGlav="MyAlbums"/>
                             </section>
                             <section className="sectionMymusic">
-                                <h3>Любимые артисты</h3>
-
+                                <h2>Любимые артисты</h2>
+                                <FavoriteArtist/>
                             </section>
                             {/* <NewRelizCard />
                             <FourYouCard/>

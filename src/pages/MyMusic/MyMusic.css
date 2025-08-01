@@ -8,6 +8,11 @@
     gap: 50px;
 }
 
+.MyMusicPage h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
 .mainMyMusic {
     display: flex;
     flex-direction: column;
@@ -32,23 +37,6 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
-/* .userIcon {
-    opacity: 0.59;
-    position: absolute;
-    width: 100%;
-    height: 291px;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-} */
-
-/* .userIcon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-} */
 
 .contentTop {
     width: 100%;
@@ -92,9 +80,10 @@
     margin-top: 40px;
 }
 
-.sectionMymusic > h3 {
-    /* margin-left: 25px; */
-    margin-bottom: 15px;
+.wrapperCreate {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .btnCreatePlay {
@@ -105,7 +94,6 @@
     align-items: flex-start;
     justify-content: space-around;
     transition: all 0.3s ease;
-    transform: translateX(20px);
     animation: fadeIn 0.5s ease forwards;
 }
 
