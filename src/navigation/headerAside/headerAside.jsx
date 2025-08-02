@@ -29,7 +29,7 @@ export const SideBarSection = () => {
                 <li><Link className="navLi" to='/premium'><img src={premiumOff} alt="" /><p>Премиум</p></Link></li>
                 <h2 className="zagBib">Библеотека</h2>
                 <li><Link className="navLi" to='/mymusic'><img src={myMusicOff} alt="" />Моя музыка</Link></li>
-                <li><Link className="navLi" to='/'><img src={discoweryOff} alt="" />Открой для себя</Link></li>
+                <li><Link className="navLi" to='/opening'><img src={discoweryOff} alt="" />Открой для себя</Link></li>
             </ul>
             <div className="CreatePlaylist">
                 <h2 className="zagBib play">

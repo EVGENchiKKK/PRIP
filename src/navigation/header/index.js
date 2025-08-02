@@ -13,8 +13,8 @@ export const Header = () => {
                     <li><Link to='/brows'>Просмотр</Link></li>
                     <li><Link to='/mymusic'>Моя музыка</Link></li>
                     <li><Link to='/'>Открой для себя</Link></li>
-                    <li><Link to='/'>Премиум</Link></li>
-                    <li><Link to='/'>Связаться с нами</Link></li>
+                    <li><Link to='/premium'>Премиум</Link></li>
+                    <li><Link to='/opening'>Связаться с нами</Link></li>
                 </ul>
                 <button className='vhod' onClick={() => navigate('/login')}>Вход</button>
             </nav>

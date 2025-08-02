@@ -1,3 +1,5 @@
+import './MyMusic.css'
+
 import { useEffect, useState } from "react";
 
 export const FavoriteArtist = () => {
@@ -27,7 +29,12 @@ export const FavoriteArtist = () => {
         <div className="favoriteArtist">
             {artists.map(artist => (
                 <div className="artistCard" key={artist.id}>
-                    <div className="artistImg"></div>
+                    <div className="artistImg" style={{
+                        backgroundImage: `url(${artist.icon})`,
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover'
+                    }}>
+                    </div>
                     <p className="artistName">{artist.nikName}</p>
                 </div>
             ))}

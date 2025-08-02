@@ -3,22 +3,22 @@
         {
             "id": 1,
             "nikName": "Big Baby Tape",
-            "icon": "./../src/image/img/BigBabyTape.jpg"  
+            "icon": "/images/artists/BigBabyTape.jpg" 
         },
         {
             "id": 2,
             "nikName": "ROCKET",
-            "icon": "./../src/image/img/ROCKET.jpg"
+            "icon": "/images/artists/ROCKET.jpg"
         },
         {
             "id": 3,
             "nikName": "Bumble Beezy",
-            "icon": "./../src/image/img/BumbleBeezy.jpg"
+            "icon": "/images/artists/BumbleBeezy.jpg"
         },
         {
             "id": 4,
             "nikName": "LILDRUGHILL",
-            "icon": "./../src/image/img/LILDRUGHILL.jpg"
+            "icon": "/images/artists/LILDRUGHILL.jpg"
         }
     ]    
 }

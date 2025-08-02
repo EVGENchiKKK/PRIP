@@ -6,20 +6,17 @@ import './FourYouCard.css';
 
 export const FourYouCard = () => {
     return (
-        <div className='main'>
-            <h2>Специяально для тебя</h2>
-            <section className="fourYouCard">
-                <div className="headerFourYouCard">
-                    <img src={Logo} alt="" className='logoPlaylist' />
-                    <div className="sliderBtn">
-                        <button className="slideBtn"><img src={StrelLevo} alt="" /></button>
-                        <button className="slideBtn"><img src={StrelPravo} alt="" /></button>
-                    </div>
+        <section className="fourYouCard">
+            <div className="headerFourYouCard">
+                <img src={Logo} alt="" className='logoPlaylist' />
+                <div className="sliderBtn">
+                    <button className="slideBtn"><img src={StrelLevo} alt="" /></button>
+                    <button className="slideBtn"><img src={StrelPravo} alt="" /></button>
                 </div>
-                <div className="bodyFourYouCard">
-                    <PlaylistCollection collectionName="dailyMix" />
-                </div>
-            </section>
-        </div>
+            </div>
+            <div className="bodyFourYouCard">
+                <PlaylistCollection collectionName="dailyMix" />
+            </div>
+        </section>
     )
 }
