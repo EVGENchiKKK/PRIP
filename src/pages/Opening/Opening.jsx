@@ -15,11 +15,12 @@ export const OpeningPage = () => {
                 <main className="MyMusicPage">
                     <SearchBar/>
                     <div className="mainMyMusic">
-                        <div className="topSectionMyMusic">
+                        <div className="topSectionMyMusic opening">
                             <div className="contentTop">
-                                <h1>Моя музыка</h1>
-                                <hr />
-                                <h2>evGpi</h2>
+                                <h1>Мой поток</h1>
+                                <div className="btnPlay">
+                                    <div className="imgPlay"></div>
+                                </div>
                             </div>
                         </div>
                         <div className="bottomSectionMyMusic">
@@ -28,16 +29,13 @@ export const OpeningPage = () => {
                                 <FourYouCard/>
                             </section>
                             <section className="sectionMymusic create">
-                                <h2>Мои плейлисты</h2>
+                                <h2>Снипеты</h2>
                                 <div className="wrapperCreate">
                                     
                                 </div>
                             </section>
                             <section className="sectionMymusic">
-                                
-                            </section>
-                            <section className="sectionMymusic">
-                                <h2>Любимые артисты</h2>
+                                <h2>Рекомендуемые исполнители</h2>
                                 <FavoriteArtist/>
                             </section>
                             {/* <NewRelizCard />

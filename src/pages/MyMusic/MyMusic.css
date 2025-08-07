@@ -38,6 +38,18 @@
     border-top-right-radius: 20px;
 }
 
+.topSectionMyMusic.opening {
+    background-image: url('./../../image/img/zagimg.png');
+}
+
+.topSectionMyMusic.opening > .contentTop, .topSectionMyMusic.opening > .contentTop > h1 {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #000;
+    gap: 10px;
+}
+
 .contentTop {
     width: 100%;
     height: 100%;
@@ -140,4 +152,24 @@
     width: 100%;
     height: 160px;
     border-radius: 100%;
+}
+
+.btnPlay {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPlay {
+    width: 15px;
+    height: 20px;
+    margin-left: 2px;
+    background-image: url('./../../image/icons/Play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
