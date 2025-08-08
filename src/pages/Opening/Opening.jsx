@@ -3,6 +3,7 @@ import { SideBarSection } from "../../navigation/headerAside/headerAside";
 import { SearchBar } from "../../components/searchBar/SearchBar";
 import { FavoriteArtist } from "../MyMusic/FavoriteArtists";
 import { FooterNoVizit } from "../../components/FooterNoVizit";
+import { Snipets } from "./Snipets";
 import './../MyMusic/MyMusic.css'
 
 export const OpeningPage = () => {
@@ -30,9 +31,7 @@ export const OpeningPage = () => {
                             </section>
                             <section className="sectionMymusic create">
                                 <h2>Снипеты</h2>
-                                <div className="wrapperCreate">
-                                    
-                                </div>
+                                <Snipets tracksCollection="tracks"/>
                             </section>
                             <section className="sectionMymusic">
                                 <h2>Рекомендуемые исполнители</h2>

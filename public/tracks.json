@@ -3,11 +3,12 @@
       {
         "id": 1,
         "title": "Not Obama",
-        "artist": "Bid Baby Tape, Aarne",
+        "artist": "Big Baby Tape, Aarne",
         "album": "PEECABOO",
         "plays": 2456789,
         "duration": "2:24",
-        "cover": "/images/covers/Notobama.jpg"
+        "cover": "/images/covers/Notobama.jpg",
+        "reliz": "2024"
       },
       {
         "id": 2,
@@ -16,7 +17,8 @@
         "album": "10:13",
         "plays": 1876543,
         "duration": "2:25",
-        "cover": "/images/covers/1QjX8lbNSCU.jpg"
+        "cover": "/images/covers/1QjX8lbNSCU.jpg",
+        "reliz": "2025"
       },
       {
         "id": 3,
@@ -25,7 +27,8 @@
         "album": "Graf Monte-Cristo / Most Valuable Pirate",
         "plays": 3210987,
         "duration": "1:49",
-        "cover": "/images/covers/A_0rXOSM9SU.jpg"
+        "cover": "/images/covers/A_0rXOSM9SU.jpg",
+        "reliz": "2025"
       },
       {
         "id": 4,
@@ -34,7 +37,8 @@
         "album": "Vibes",
         "plays": 3110987,
         "duration": "2:33",
-        "cover": "/images/covers/bzBci7ex3pU.jpg"
+        "cover": "/images/covers/bzBci7ex3pU.jpg",
+        "reliz": "2025"
       },
       {
         "id": 5,
@@ -43,7 +47,8 @@
         "album": "ОПГ СИТИ",
         "plays": 4110987,
         "duration": "3:13",
-        "cover": "/images/covers/OPGCITY.jpg"
+        "cover": "/images/covers/OPGCITY.jpg",
+        "reliz": "2019"
       }
   ]
 }

@@ -1,5 +1,4 @@
 import './MyMusic.css'
-
 import { useEffect, useState } from "react";
 
 export const FavoriteArtist = () => {

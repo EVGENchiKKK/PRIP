@@ -1,0 +1,116 @@
+.snipetsWrapper {
+    background: linear-gradient(-150deg, #15FF00 0%, #FF00D9 100%);
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+}
+
+.snipetCard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.oblozhSnipet {
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgSnipet {
+    width: 184px;
+    height: 184px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.oblozhSnipet > hr {
+    width: 80%;
+    height: 5px;
+    opacity: 50%;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.contentSnip {
+    height: 180px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contentSnip > h2 {
+    font-size: 25px;
+}
+
+.infoSnip {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #898989;
+}
+
+.interactionSnip {
+    display: flex;
+    gap: 14px;
+}
+
+.playBtnSnip {
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnImg {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btnImg > img {
+    width: 100%;
+    height: 100%;
+}
+
+.playBtnSnip.play {
+    background-color: #1ED760;
+    border-radius: 100%;
+}
+
+.btnImg.play {
+    width: 14px;
+    height: 16px;
+    margin-left: 3px;
+}
+
+.musicTrack {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+.musicTrack hr {
+    width: 75%;
+}
