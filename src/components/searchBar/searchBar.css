@@ -56,16 +56,36 @@
 }
 
 .profileBar {
-    width: 242px;
+    width: 280px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+}
+
+.topProfile {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.topProfile.activTop {
+    justify-content: flex-start;
+    transition: 0.3s ease-in-out;
 }
 
 .btnUved {
     background: none;
     border: none;
+}
+
+.btnUved.activUved {
+    display: none;
+    transition: 0.3s ease-in-out;
 }
 
 .btnUved img {
@@ -75,12 +95,33 @@
 
 .profileBtn {
     width: 60%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.profileBtn img {
+.btnProfileLogo {
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+.groupProfile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.nameAndLogo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
+
+.nameAndLogo > img {
     width: 45px;
     height: 45px;
     border-radius: 20px;
@@ -89,7 +130,7 @@
     justify-content: center;
 }
 
-.btnProfileLogo {
+.strelLogo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +138,7 @@
     border: none;
 }
 
-.btnProfileLogo img {
+.strelLogo img {
     width: 15px;
     height: 15px;
 }
@@ -109,4 +150,68 @@
 .search-section.brows {
     width: 100%;
     justify-content: flex-end;
+}
+
+.bottomProfile {
+    width: 100%;
+    /* background-color: #282828; */
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.bottomProfile.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    background-color: #282828;
+    padding: 0 5px;
+}
+
+.profileBar.activeProf {
+    position: absolute;
+    right: 145px;
+    background-color: #282828;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.menuDropDawn {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elDropDawn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.dropDawnItem {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dropDawnItem:nth-child(n + 2) {
+    margin-top: 20px;
 }
