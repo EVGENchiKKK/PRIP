@@ -5,6 +5,7 @@ import strelVniz from './../../image/icons/icons8-стрелка-вниз-30 1.p
 import profileLogo from './../../image/img/omi-omi.jpg';
 import './searchBar.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const SearchBar = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -44,7 +45,7 @@ export const SearchBar = () => {
                 <div className={`bottomProfile ${openMenu ? 'active' : ''}`}>
                     <nav className='menuDropDawn'>
                         <ul className='elDropDawn'>
-                            <li className='dropDawnItem'>Профиль</li>
+                            <li className='dropDawnItem'><Link to="/profile">Профиль</Link></li>
                             <li className='dropDawnItem'>Уведомления</li>
                             <li className='dropDawnItem'>Связаться с нами</li>
                             <li className='dropDawnItem'>Выйти</li>
