@@ -1,5 +1,15 @@
 {
-    "id": 1,
-    "username": "evGpi",
-    "usericon": "src/image/img/omi-omi.jpg"
+    "users": [
+        {
+            "id": 1,
+            "username": "evGpi",
+            "usericon": "/images/omi-omi.jpg",
+            "email": "parshutin05@inbox.ru",
+            "country": "Россия",
+            "birthday": "14.02.2005",
+            "gender": "Мужской",
+            "numberPhone": "+79231691758"
+        }
+    ]
+    
 }
