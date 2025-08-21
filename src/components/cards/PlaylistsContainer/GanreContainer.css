@@ -1,7 +1,7 @@
 .ganreCard {
     position: relative;
-    width: 160px;
-    height: 177px;
+    width: 175px;
+    height: 200px;
     border-radius: 10px;
     font-size: 24px;
     color: #fff;
@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .ganreCard img {
@@ -22,5 +23,5 @@
 .ganreContainer {
     display: flex;
     gap: 10px;
-    justify-content: flex-start;
+    justify-content: space-between;
 }

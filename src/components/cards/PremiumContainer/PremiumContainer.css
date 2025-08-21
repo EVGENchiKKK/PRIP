@@ -9,6 +9,10 @@
     color: #fff;
 }
 
+.premiumContainer.profile {
+    width: 100%;
+}
+
 .premiumContainer h2 {
     color: #fff;
 }
@@ -23,8 +27,14 @@
     height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: #3D3D3D;
     border-radius: 15px;
+}
+
+.preimCard.profile {
+    width: 250px;
+    height: 350px;
 }
 
 .topTextSection {
@@ -59,6 +69,10 @@
     margin: 0 80px 17px 30px;
 }
 
+.namePlan.profile {
+    margin: 0 0 17px 30px;
+}
+
 .textPrice {
     display: flex;
     flex-direction: column;
@@ -67,6 +81,10 @@
     align-items: flex-start;
     font-size: 15px;
     margin: 0 45px 15px 30px;
+}
+
+.textPrice.profile {
+    margin: 0 0 15px 13px;
 }
 
 .textPrice span {
@@ -94,6 +112,10 @@ hr {
     align-items: center;
 }
 
+.spisOp.profile {
+    font-size: 9px;
+}
+
 .spisOp li {
     display: flex;
     flex-direction: column;
@@ -106,9 +128,15 @@ hr {
     font-size: 9px;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 24px;
+    margin-top: 22px;
     margin-bottom: auto;
     border: none;
+}
+
+.btnPreim.profile {
+    margin-bottom: 22px;
+    width: 225px;
+    font-size: 7px;
 }
 
 .smallFont {
@@ -116,4 +144,8 @@ hr {
     margin: auto 62px;
     font-weight: 600;
     color: grey;
+}
+
+.smallFont.profile {
+    display: none;
 }

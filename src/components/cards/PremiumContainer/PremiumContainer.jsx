@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Logo from './../../../image/img/Иконка муз.дорожки.png';
 import './PremiumContainer.css';
 
-export const PremiumContainer = ({collectionPlan}) => {
+export const PremiumContainer = ({ collectionPlan, showTitle = true, profile = true }) => {
     const [preims, setPreims] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -15,7 +15,7 @@ export const PremiumContainer = ({collectionPlan}) => {
         }
 
         return (
-            <section className='preimCard'>
+            <section className={`preimCard ${profile && "profile"}`}>
                 <div className="topTextSection" style={preimCardStyle}>
                     <p>Бесплатно на 1 месяц</p>
                 </div>
@@ -23,14 +23,14 @@ export const PremiumContainer = ({collectionPlan}) => {
                     <img src={Logo} alt="" />
                     <span>Neofy premium</span>
                 </div>
-                <span className="namePlan" style={namePreimColor}>{preim.name}</span>
-                <div className="textPrice">
+                <span className={`namePlan ${profile && "profile"}`} style={namePreimColor}>{preim.name}</span>
+                <div className={`textPrice ${profile && "profile"}`}>
                     <p>Бесплатно в первый месяц</p>
                     <span>{preim.price} руб / в месяц</span>
                 </div>
                 <hr />
                 {preim.preim.map((item, index) => (
-                    <ul className="spisOp">
+                    <ul className={`spisOp ${profile && "profile"}`}>
                         <li key={index}>
                             <div>{item.colvoAkk}</div>
                             <div>{item.sale}</div>
@@ -39,10 +39,10 @@ export const PremiumContainer = ({collectionPlan}) => {
                     </ul>
                 ))}
                 <hr />
-                <button className="btnPreim" style={preimCardStyle}>
+                <button className={`btnPreim ${profile && "profile"}`} style={preimCardStyle}>
                     Попробуйте бесплатно в течение 1 месяца
                 </button>
-                <span className="smallFont">
+                <span className={`smallFont ${profile && "profile"}`}>
                     Бесплатно в течение 1 месяца, затем {preim.price} руб в месяц.
                     Предложение доступно только если вы не пробовали Премиум.
                 </span>
@@ -53,13 +53,13 @@ export const PremiumContainer = ({collectionPlan}) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-              const response = await fetch('/premiumPlan.json');
-              const data = await response.json();
-              setPreims(data[collectionPlan] || []);
+                const response = await fetch('/premiumPlan.json');
+                const data = await response.json();
+                setPreims(data[collectionPlan] || []);
             } catch (error) {
-              console.error("Ошибка загрузки:", error);
+                console.error("Ошибка загрузки:", error);
             } finally {
-              setLoading(false);
+                setLoading(false);
             }
           };
       
@@ -70,8 +70,8 @@ export const PremiumContainer = ({collectionPlan}) => {
     if (!preims.length) return <div>Подборка не найдена.</div>;
 
     return (
-        <section className="premiumContainer">
-            <h2>Планы Премиум</h2>
+        <section className="premiumContainer profile">
+            {showTitle && <h2>Планы Премиум</h2>}
             <div className="premiumCardContainer">
                 {preims.map(preim =>(
                     <PreimCard key={preim.id} preim={preim} />

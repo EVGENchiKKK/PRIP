@@ -82,7 +82,7 @@ export const Profile = () => {
                         <div className="bottomSectionMyMusic">
                             <section className="sectionMymusic">
                                 <h2>План подписки</h2>
-                                <PremiumContainer collectionPlan="premium"/>
+                                <PremiumContainer collectionPlan="premium" showTitle={false} profile={true}/>
                             </section>
                             <section className="sectionMymusic create">
                                 <h2>История операций</h2>

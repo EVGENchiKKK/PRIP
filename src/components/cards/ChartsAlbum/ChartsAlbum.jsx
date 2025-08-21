@@ -62,7 +62,7 @@ export const ChartsAlbumCards = ({nameGlav}) => {
     if (!albums.length) return <div className="not-found">Подборка не найдена.</div>;
 
     return (
-        <section className="chartsAlbumCards">
+        <div className="chartsAlbumCards">
             <div className="headerChartsAlbum">
                 <h2>{getNameGlav()}</h2>
                 <div className="sliderBtn">
@@ -92,6 +92,6 @@ export const ChartsAlbumCards = ({nameGlav}) => {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

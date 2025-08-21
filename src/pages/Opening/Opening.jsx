@@ -37,13 +37,8 @@ export const OpeningPage = () => {
                                 <h2>Рекомендуемые исполнители</h2>
                                 <FavoriteArtist/>
                             </section>
-                            {/* <NewRelizCard />
-                            <FourYouCard/>
-                            <NastroyCard/>
-                            <ReklPremTwo/> */}
                         </div>
                     </div>
-                    
                     <FooterNoVizit />
                 </main>
             </div>

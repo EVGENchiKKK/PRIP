@@ -46,17 +46,11 @@ export const MyMusic = () => {
                                 <h2>Любимые артисты</h2>
                                 <FavoriteArtist/>
                             </section>
-                            {/* <NewRelizCard />
-                            <FourYouCard/>
-                            <NastroyCard/>
-                            <ReklPremTwo/> */}
                         </div>
                     </div>
-                    
                     <FooterNoVizit />
                 </main>
             </div>
-            
         </div>
     )
 }
