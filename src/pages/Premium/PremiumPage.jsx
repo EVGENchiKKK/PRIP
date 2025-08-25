@@ -10,7 +10,7 @@ export const PremiumPage = () => {
             <Header/>
             <ZagVizPrem/>
             <h2 className="premText">
-                Пользуйся Neofy без ограничений с премиумоми насладись музыкой по полной
+                Пользуйся Neofy без ограничений с премиумом и насладись музыкой по полной
             </h2>
             <PremiumContainer collectionPlan="premium" showTitle={true} profile={false}/>
             <PreimushCard/>

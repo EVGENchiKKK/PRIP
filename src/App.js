@@ -8,6 +8,7 @@ import { LoginPage } from './pages/LoginPage/LoginPage';
 import { MyMusic } from './pages/MyMusic/MyMusic';
 import { OpeningPage } from './pages/Opening/Opening';
 import { Profile } from './pages/Profile/Profile';
+import { ContactUs } from './pages/ContactUs/ContactUs';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/premium' element={<PremiumPage/>}/>
             <Route path='/opening' element={<OpeningPage/>}/>
             <Route path='/profile' element={<Profile/>}/>
+            <Route path='/contactUs' element={<ContactUs/>}/>
             <Route path='/login' element={<LoginPage/>}/>
           </Routes>
         </BrowserRouter>

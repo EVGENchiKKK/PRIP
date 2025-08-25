@@ -62,7 +62,6 @@ export const PremiumContainer = ({ collectionPlan, showTitle = true, profile = t
                 setLoading(false);
             }
           };
-      
           fetchData();
     }, [collectionPlan]);
 

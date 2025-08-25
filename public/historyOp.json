@@ -1,0 +1,22 @@
+{
+    "historyOperation": [
+        {
+            "id": 1,
+            "nameOperation": "Оплата Индивидуальной подписки",
+            "price": 200,
+            "dateOperation": "25.01.2025" 
+        },
+        {
+            "id": 2,
+            "nameOperation": "Оплата Студенчиской подписки",
+            "price": 100,
+            "dateOperation": "25.02.2025"
+        },
+        {
+            "id": 3,
+            "nameOperation": "Оплата подписки Для пары",
+            "price": 350,
+            "dateOperation": "25.03.2025"
+        }
+    ]
+}

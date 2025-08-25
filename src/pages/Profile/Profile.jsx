@@ -2,6 +2,7 @@ import { SideBarSection } from "../../navigation/headerAside/headerAside";
 import { SearchBar } from "../../components/searchBar/SearchBar";
 import { FooterNoVizit } from "../../components/FooterNoVizit";
 import { PremiumContainer } from "../../components/cards/PremiumContainer/PremiumContainer";
+import { HistoryOp } from "./HistoryOp";
 import { useState, useEffect } from "react";
 import './Profile.css'
 
@@ -40,7 +41,7 @@ export const Profile = () => {
             <div className="wrapperMain">
                 <main className="MyMusicPage">
                     <SearchBar/>
-                    <div className="mainMyMusic">
+                    <div className="mainMyMusic profile">
                         <div className="topSectionMyMusic profile">
                             <div className="profileContent">
                                 <div className="imgProfile">
@@ -79,14 +80,14 @@ export const Profile = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bottomSectionMyMusic">
+                        <div className="bottomSectionMyMusic profile">
                             <section className="sectionMymusic">
                                 <h2>План подписки</h2>
                                 <PremiumContainer collectionPlan="premium" showTitle={false} profile={true}/>
                             </section>
                             <section className="sectionMymusic create">
                                 <h2>История операций</h2>
-                                {/* <Snipets tracksCollection="tracks"/> */}
+                                <HistoryOp historyCollection="historyOperation"/>
                             </section>
                         </div>
                     </div>

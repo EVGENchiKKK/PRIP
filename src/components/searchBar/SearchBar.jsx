@@ -47,7 +47,7 @@ export const SearchBar = () => {
                         <ul className='elDropDawn'>
                             <li className='dropDawnItem'><Link to="/profile">Профиль</Link></li>
                             <li className='dropDawnItem'>Уведомления</li>
-                            <li className='dropDawnItem'>Связаться с нами</li>
+                            <li className='dropDawnItem'><Link to="/contactUs">Связаться с нами</Link></li>
                             <li className='dropDawnItem'>Выйти</li>
                         </ul>
                     </nav>
