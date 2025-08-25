@@ -1,0 +1,122 @@
+.vizitPage.contactUs, .mainContact, .contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vizitPage.contactUs {
+    min-height: 100vh;
+}
+
+.mainContact {
+    width: 900px;
+    margin: 120px 0;
+}
+
+.contactSection {
+    width: 100%;
+    gap: 50px;
+    font-size: 32px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    gap: 10px;
+}
+
+.wrapperInpContact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.elInp {
+    flex-basis: 215px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid #000;
+}
+
+.elInp::placeholder {
+    padding-left: 15px;
+}
+
+.textArContact {
+    width: 440px;
+    height: 135px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid #000;
+}
+
+.textArContact::placeholder {
+    padding: 15px 0 0 15px;
+}
+
+.btnContact {
+    background: #15FF00;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.geoOfficeCard {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.textContentGeo {
+    gap: 30px;
+}
+
+.textContentGeo, .adressTimeContent, .wrapperAdressTimeData {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+}
+
+.adressTimeContent {
+    gap: 30px;
+}
+
+.wrapperAdressTimeData {
+    font-size: 20px;
+    gap: 10px;
+    width: 315px;
+    padding-left: 60px;
+}
+
+.dataEl {
+    text-align: left;
+}
+
+.imageOffice {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.imgOffice {
+    background-image: url('./../../image/img/Office.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+}
