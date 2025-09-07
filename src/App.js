@@ -4,7 +4,7 @@ import { Home } from './pages/Home/home';
 import { BrowsPage } from './pages/Browse/brows';
 import { PremiumPage } from './pages/Premium/PremiumPage';
 import { Route, BrowserRouter, Routes} from 'react-router-dom';
-import { LoginPage } from './pages/LoginPage/LoginPage';
+import { LoginForm } from './pages/LoginPage/LoginForm';
 import { MyMusic } from './pages/MyMusic/MyMusic';
 import { OpeningPage } from './pages/Opening/Opening';
 import { Profile } from './pages/Profile/Profile';
@@ -24,7 +24,7 @@ function App() {
             <Route path='/opening' element={<OpeningPage/>}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/contactUs' element={<ContactUs/>}/>
-            <Route path='/login' element={<LoginPage/>}/>
+            <Route path='/login' element={<LoginForm/>}/>
           </Routes>
         </BrowserRouter>
       </div>
