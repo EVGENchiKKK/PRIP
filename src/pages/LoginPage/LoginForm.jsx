@@ -1,11 +1,12 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FormStageOne } from "./FormStageOne";
 import { FormStageTwo } from "./FormStageTwo";
-import { FormStageTree } from "./FromStageTree";
+import { FormStageTree } from "./FormStageTree";
 import { Link } from "react-router-dom";
 import strelLevoBack from './../../image/icons/StrelLevoBack.png';
 import strelPravoForm from './../../image/icons/strelPravoForm.png';
+import './LoginForm.css';
 
 export const LoginForm = () => {
     const [pages, setPages] = useState(0);
@@ -23,6 +24,7 @@ export const LoginForm = () => {
     });
 
     const titleStage = ["Этап 1", "Этап 2", "Этап 3"];
+    const password = watch("password");
 
     const pageDisplay = () => {
         if (pages === 0) {
@@ -30,8 +32,7 @@ export const LoginForm = () => {
         } else if (pages === 1) {
             return <FormStageTwo register={register} errors={errors}></FormStageTwo>
         } else {
-            // Здесь позже появится атрибут password
-            return <FormStageTree register={register} errors={errors}></FormStageTree>
+            return <FormStageTree register={register} errors={errors} password={password}></FormStageTree>
         }
     };
 
@@ -66,8 +67,10 @@ export const LoginForm = () => {
     return (
         <main className="formPage">
             <div className="formContainer">
-                <div className="formWrapper">
-                    <Link to="/home"><img src={strelLevoBack} alt="" />Вернуться на главную</Link>
+                <div className="formWrapper left">
+                    <div className="wrapperBackToHome">
+                        <Link to="/home" className="backToHome"><img src={strelLevoBack} alt="" />Вернуться на главную</Link>
+                    </div>
                     <div className="formMain">
                         <div className="headerForm">
                             <h1>Регистрация</h1>
@@ -80,29 +83,26 @@ export const LoginForm = () => {
                             <div className="footerForm">
                                 <button
                                 type={pages === titleStage.length - 1 ? "submit" : "button"}
-                                onClick={pages === titleStage.length - 1 ? undefined : handleNext}>
-                                    <img src={strelPravoForm} />
+                                onClick={pages === titleStage.length - 1 ? undefined : handleNext}
+                                className="btnFormSubmit"
+                                >
+                                    <img src={strelPravoForm} alt=""/>
                                 </button>
                                 <div className="pageStage">
-                                    <button 
-                                    className="btnStagePage"
-                                    style={{opacity: pages === 0 ? "100%" : "50%"}}
-                                    >
-                                    </button>
-                                    <button 
-                                    className="btnStagePage"
-                                    style={{opacity: pages === 1 ? "100%" : "50%"}}
-                                    >
-                                    </button>
-                                    <button 
-                                    className="btnStagePage"
-                                    style={{opacity: pages === 2 ? "100%" : "50%"}}
-                                    >
-                                    </button>
+                                    {titleStage.map((title, index) => (
+                                        <div key={index} 
+                                        style={{opacity: pages === index ? "100%" : "50%"}} 
+                                        className="stageIndicator"
+                                        onClick={() => setPages(index)}>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </form>
                     </div>
+                </div>
+                <div className="formWrapper right">
+                    <div className="wrapperImgReg"></div>
                 </div>
             </div>
         </main>

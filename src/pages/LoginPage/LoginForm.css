@@ -1,0 +1,165 @@
+.formPage {
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    background: #282828;
+    width: 760px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.formWrapper {
+    width: 340px;
+    height: 410px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formWrapper > .wrapperBackToHome {
+    margin-right: auto;
+    margin-left: 20px;
+    width: 160px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.wrapperBackToHome > .backToHome {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapperBackToHome > .backToHome > img {
+    width: 25px;
+}
+
+.formMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 330px;
+    font-size: 13px;
+    color: #fff;
+    /* margin-bottom: auto; */
+}
+
+.headerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formMain > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.formMain > .headerForm > h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.footerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btnFormSubmit {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: #15FF00;
+    border: none;
+}
+
+.btnFormSubmit > img {
+    width: 25px;
+    height: 25px;
+}
+
+.pageStage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.wrapperImgReg {
+    width: 340px;
+    height: 410px;
+    background-image: url('./../../image/img/zagimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.stageIndicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.stageRegOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 20px;
+}
+
+.stageRegOne > .formInpReg, .labelInp {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.labelInp {
+    gap: 10px;
+}
+
+.labelInp > .nameInp {
+    margin-right: auto;
+    font-size: 13px;
+    font-weight: 100;
+    height: 10px;
+}
+
+.labelInp > .inpRegForm {
+    width: 100%;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+}
+
+.inpRegForm::placeholder {
+    padding-left: 20px;
+    font-size: 13px;
+}
