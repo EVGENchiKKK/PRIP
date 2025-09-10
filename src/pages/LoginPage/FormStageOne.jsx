@@ -18,7 +18,7 @@ export const FormStageOne = ({ register, errors }) => {
                             message: "Email должен содержать минимум 6 символов"
                         }
                         })}/>
-                    {errors.email && <p>{errors.email.message}</p>}
+                    {errors.email && <p className="errorMes">{errors.email.message}</p>}
                 </label>
             </div>
             <div className="formInpReg">
@@ -29,7 +29,7 @@ export const FormStageOne = ({ register, errors }) => {
                         required: 'Поле обязательно',
                         pattern: {
                             value: /^[A-Za-zА-Яа-яЁё\s\-]+$/,
-                            message: "Фамилия может содержать только буквы, пробелы и дефисы"
+                            message: "Допустимы только буквы, пробелы и дефисы"
                         },
                         minLength: {
                             value: 2,
@@ -41,7 +41,7 @@ export const FormStageOne = ({ register, errors }) => {
                         }
                     })}
                     />
-                    {errors.surname && <p>{errors.surname.message}</p>}
+                    {errors.surname && <p className="errorMes">{errors.surname.message}</p>}
                 </label>
             </div>
             <div className="formInpReg">
@@ -52,7 +52,7 @@ export const FormStageOne = ({ register, errors }) => {
                         required: 'Поле обязательно',
                         pattern: {
                             value: /^[A-Za-zА-Яа-яЁё\s\-]+$/,
-                            message: "Имя может содержать только буквы, пробелы и дефисы"
+                            message: "Допустимы только буквы, пробелы и дефисы"
                         },
                         minLength: {
                             value: 2,
@@ -64,7 +64,7 @@ export const FormStageOne = ({ register, errors }) => {
                         }
                     })}
                     />
-                    {errors.name && <p>{errors.name.message}</p>}
+                    {errors.name && <p className="errorMes">{errors.name.message}</p>}
                 </label>
             </div>
         </div>

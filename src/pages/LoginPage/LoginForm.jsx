@@ -6,6 +6,7 @@ import { FormStageTree } from "./FormStageTree";
 import { Link } from "react-router-dom";
 import strelLevoBack from './../../image/icons/StrelLevoBack.png';
 import strelPravoForm from './../../image/icons/strelPravoForm.png';
+import Logo from './../../image/img/Иконка муз.дорожки.png'
 import './LoginForm.css';
 
 export const LoginForm = () => {
@@ -102,7 +103,12 @@ export const LoginForm = () => {
                     </div>
                 </div>
                 <div className="formWrapper right">
-                    <div className="wrapperImgReg"></div>
+                    <div className="wrapperImgReg">
+                        <div className="logoContainerPrem form">
+                            <img src={Logo} alt="" />
+                            <span>Neofy</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

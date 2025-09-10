@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .formWrapper > .wrapperBackToHome {
@@ -50,12 +50,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 330px;
     font-size: 13px;
     color: #fff;
-    /* margin-bottom: auto; */
 }
 
 .headerForm {
@@ -114,6 +113,21 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainerPrem.form {
+    margin: 0;
+    width: 180px;
+    height: 45px;
+    font-size: 26px;
+}
+
+.logoContainerPrem.form img {
+    width: 70px;
+    height: 45px;
 }
 
 .stageIndicator {
@@ -130,11 +144,12 @@
     align-items: center;
     width: 300px;
     gap: 20px;
+    height: auto;
 }
 
 .stageRegOne > .formInpReg, .labelInp {
     width: 100%;
-    height: 45px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,6 +158,8 @@
 
 .labelInp {
     gap: 10px;
+    min-height: 50px;
+    position: relative;
 }
 
 .labelInp > .nameInp {
@@ -153,13 +170,23 @@
 }
 
 .labelInp > .inpRegForm {
-    width: 100%;
-    height: 25px;
+    width: 280px;
+    min-height: 25px;
     border-radius: 20px;
     border: none;
+    padding-left: 20px;
 }
 
-.inpRegForm::placeholder {
-    padding-left: 20px;
-    font-size: 13px;
+.inpRegForm.select {
+    width: 300px;
+}
+
+.errorMes {
+    font-size: 10px;
+    margin-right: auto;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    margin: 0;
+    text-align: right;
 }
