@@ -56,7 +56,7 @@ export const FormStageTwo = ({ register, errors }) => {
             </div>
             <div className="formInpReg">
                 <label htmlFor="numberPhone" className="labelInp">
-                    <p className="nameInp">Введите имя</p>
+                    <p className="nameInp">Введите номер телефона</p>
                     <input type="text" placeholder="Номер телефона..." id="numberPhone" className="inpRegForm"
                     {...register("numberPhone", {
                         required: 'Поле обязательно',

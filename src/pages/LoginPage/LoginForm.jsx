@@ -41,7 +41,7 @@ export const LoginForm = () => {
         let arrValidate = [];
 
         if (pages === 0) {
-            arrValidate = ["email", "surname", "username"]
+            arrValidate = ["email", "surname", "name"]
         } else if (pages === 1) {
             arrValidate = ["nationality", "username", "numberPhone"]
         } else {
