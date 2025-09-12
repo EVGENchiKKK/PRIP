@@ -16,6 +16,10 @@
     border-radius: 15px;
 }
 
+.formContainer.login {
+    flex-direction: row-reverse;
+}
+
 .formWrapper {
     width: 340px;
     height: 410px;
@@ -32,6 +36,11 @@
     width: 160px;
     height: 30px;
     font-size: 10px;
+}
+
+.wrapperBackToHome.login {
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .wrapperBackToHome > .backToHome {
@@ -83,6 +92,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 
 .btnFormSubmit {
@@ -94,6 +104,12 @@
     border-radius: 100%;
     background: #15FF00;
     border: none;
+}
+
+.btnFormSubmit.login {
+    border-radius: 20px;
+    width: 80px;
+    height: 25px;
 }
 
 .btnFormSubmit > img {
@@ -192,4 +208,41 @@
     right: 0;
     margin: 0;
     text-align: right;
+}
+
+.wrapperInpLog {
+    width: 300px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.wrapperInpLog > label {
+    font-size: 13px;
+}
+
+.inpRegForm {
+    height: 30px;
+    width: 280px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+}
+
+.remembermeWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.textRouteReg {
+    font-size: 10px;
+}
+
+.footerForm.login {
+    gap: 20px;
 }
