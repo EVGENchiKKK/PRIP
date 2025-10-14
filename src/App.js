@@ -9,8 +9,16 @@ import { MyMusic } from './pages/MyMusic/MyMusic';
 import { OpeningPage } from './pages/Opening/Opening';
 import { Profile } from './pages/Profile/Profile';
 import { ContactUs } from './pages/ContactUs/ContactUs';
+import { useEffect } from 'react';
+import { getToken } from './components/api/get-token';
 
 function App() {
+
+
+  useEffect(()=>{
+    getToken()
+  },[])
+
   return (
     <div className='App'>
       <div className='black'>
