@@ -3,14 +3,14 @@ import { getToken } from "./get-token"
 
 export const Spotify = () => {
     return {
-        ClientId:  "095d82f3539345b0b4831e4403ee13e8",
-        ClientSecret: "a9025000417a4a258c47618123494497"
+        ClientId:  "***********************",
+        ClientSecret: "********************"
     }
 }
 
 
-export const clientId = "095d82f3539345b0b4831e4403ee13e8"
-export const clientSecret =  "a9025000417a4a258c47618123494497"
+export const clientId = "**********************"
+export const clientSecret =  "****************************"
 
 
 const BASE_URL = 'https://api.spotify.com/v1/browse'
